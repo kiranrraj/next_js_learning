@@ -1,0 +1,106 @@
+.dashboard {
+  display: flex;
+  height: 100vh;
+  background: #f9f9f9;
+  font-family: sans-serif;
+}
+
+.sidebar {
+  width: 20%;
+  min-width: 220px;
+  background-color: #f0f0f0;
+  border-right: 1px solid #ccc;
+  padding: 16px;
+  overflow-y: auto;
+}
+
+.content {
+  width: 80%;
+  padding: 16px;
+  overflow-y: auto;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.testCards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.testCard {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 12px;
+  border-radius: 8px;
+  width: calc(50% - 16px);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.testCardHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+.testCardBody {
+  font-size: 14px;
+  color: #333;
+}
+
+.closeBtn {
+  background: transparent;
+  border: none;
+  color: red;
+  font-size: 20px;
+  cursor: pointer;
+}
+.tabBar {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 16px;
+  padding-bottom: 8px;
+  gap: 8px;
+}
+
+/* Individual Tab */
+.tab {
+  padding: 8px 12px;
+  background-color: #e0e0e0;
+  border-radius: 4px 4px 0 0;
+  cursor: pointer;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+}
+
+/* Active Tab */
+.activeTab {
+  background-color: #ffffff;
+  font-weight: bold;
+  border-bottom: 2px solid white;
+}
+
+/* Close Button inside Tab */
+.tab .closeBtn {
+  margin-left: 8px;
+  font-size: 16px;
+  color: red;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+/* Content area below tabs */
+.tabContent {
+  flex-grow: 1;
+  padding: 16px;
+  border: 1px solid #ccc;
+  border-radius: 0 4px 4px 4px;
+  background-color: #fff;
+}

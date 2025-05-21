@@ -1,0 +1,31 @@
+.group {
+  margin-left: 12px;
+}
+
+.groupTitle {
+  cursor: pointer;
+  font-weight: 600;
+  padding: 4px 6px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  user-select: none;
+}
+
+.groupTitle:hover, .groupTitle:focus {
+  background-color: #e0e0e0;
+  outline: none;
+}
+
+.expandIcon {
+  width: 16px;
+  display: inline-block;
+  text-align: center;
+  margin-right: 6px;
+  font-size: 12px;
+}
+
+.groupContent {
+  margin-left: 16px;
+  margin-top: 4px;
+}
