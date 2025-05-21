@@ -1,0 +1,32 @@
+.blogCard {
+  border: 1px solid #ccc;
+  padding: 1rem;
+  border-radius: 6px;
+  background-color: #fff;
+}
+
+.title {
+  font-size: 1.25rem;
+  margin-bottom: 0.25rem;
+}
+
+.author,
+.datetime {
+  font-size: 0.85rem;
+  color: #666;
+  margin-bottom: 0.25rem;
+}
+
+.tags {
+  margin-top: 0.5rem;
+}
+
+.tag {
+  display: inline-block;
+  background-color: #0070f3;
+  color: white;
+  padding: 0.15rem 0.5rem;
+  border-radius: 4px;
+  margin-right: 0.5rem;
+  font-size: 0.75rem;
+}
