@@ -4,7 +4,14 @@
   align-items: center;
   padding: 4px 8px;
   border-bottom: 1px solid #ddd;
-  cursor: default;
+  margin-left: 20px;
+  padding: 4px;
+  cursor: pointer;
+  color: #333;
+}
+
+.testItem:hover {
+  background-color: #e0e0e0;
 }
 
 .testName {
@@ -24,3 +31,5 @@
 .openBtn:hover {
   background-color: #005bb5;
 }
+
+
