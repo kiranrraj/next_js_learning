@@ -3,9 +3,9 @@ import requests
 import json
 
 # Backend base URL
-BASE_URL = "http://localhost:8000"
+BASE_URL = "http://localhost:8001"
 
-# Test credentials (ensure these users exist in MongoDB)
+# Test credentials (only admin and drdhanvantari are correct)
 TEST_USERS = [
     {"username": "admin", "password": "Admin@123@@", "expected_role": "admin"},
     {"username": "drdhanvantari", "password": "doc456", "expected_role": "doctor"},
@@ -34,14 +34,15 @@ def login_and_get_token(username, password):
         "username": username,
         "password": password
     }
-
+    # Learn more on this content, needed for security
     headers = {
         "Content-Type": "application/x-www-form-urlencoded"
     }
 
     try:
         print(f"Logging in as {username}...")
-        response = requests.post(url, data=payload, headers=headers)  # Using data instead of json
+         # Using data instead of json, for learning
+        response = requests.post(url, data=payload, headers=headers) 
         log_request_response(response)
         response.raise_for_status()
 
