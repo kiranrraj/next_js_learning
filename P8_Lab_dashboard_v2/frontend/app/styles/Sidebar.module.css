@@ -1,0 +1,53 @@
+.sidebarContainer {
+  padding: 10px;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  user-select: none;
+}
+
+.groupName {
+  cursor: pointer;
+  padding: 6px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f0f0f0;
+  margin-bottom: 2px;
+  border-radius: 4px;
+}
+
+.groupName:hover {
+  background-color: #e0e0e0;
+}
+
+.childList {
+  margin-top: 4px;
+}
+
+.testItem {
+  display: flex;
+  justify-content: space-between;
+  padding: 4px 10px;
+  margin-bottom: 2px;
+  background-color: #fafafa;
+  border-radius: 3px;
+}
+
+.testItem:hover {
+  background-color: #eee;
+}
+
+.openBtn {
+  background-color: #0070f3;
+  border: none;
+  color: white;
+  padding: 2px 8px;
+  border-radius: 3px;
+  font-size: 12px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.openBtn:hover {
+  background-color: #005bb5;
+}
