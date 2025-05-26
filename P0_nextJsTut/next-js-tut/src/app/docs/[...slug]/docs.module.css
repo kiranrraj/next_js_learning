@@ -1,0 +1,15 @@
+.container {
+  padding: 1rem;
+  background-color: #f0f0f0;
+  border-radius: 8px;
+}
+
+.heading {
+  color: #0070f3;
+}
+
+.list {
+  margin-top: 1rem;
+  list-style-type: disc;
+  padding-left: 1.5rem;
+}
