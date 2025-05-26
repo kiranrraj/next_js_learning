@@ -1,0 +1,17 @@
+.userContainer {
+  padding: 2rem;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+}
+
+.userName {
+  font-size: 1.75rem;
+  font-weight: bold;
+}
+
+
+.userNotFound {
+  padding: 2rem;
+  color: red;
+  font-weight: bold;
+}

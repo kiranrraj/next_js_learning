@@ -1,0 +1,17 @@
+.header{
+    background-color: blueviolet;
+    color: aliceblue;
+    padding: 5px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+}
+
+.title {
+    font-size: 32px;
+}
+
+.nav {
+    font-weight: 600;
+}

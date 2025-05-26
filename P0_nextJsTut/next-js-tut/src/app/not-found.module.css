@@ -1,0 +1,11 @@
+.container {
+    padding: 10px;
+    text-align: center;
+}
+
+.link {
+    display: inline-flex;
+    margin-top: 10px;
+    color: blue;
+    text-decoration: underline;
+}
