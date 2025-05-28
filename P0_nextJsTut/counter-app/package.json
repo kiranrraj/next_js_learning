@@ -1,5 +1,5 @@
 {
-  "name": "next-js-tut",
+  "name": "counter-app",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -9,8 +9,8 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "counter-app": "file:",
     "next": "15.3.2",
-    "next-js-tut": "file:",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
   },
