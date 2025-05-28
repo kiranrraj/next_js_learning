@@ -1,0 +1,20 @@
+/* footer.module.css */
+.footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer .details {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.footer span {
+  margin: 0 10px;
+}

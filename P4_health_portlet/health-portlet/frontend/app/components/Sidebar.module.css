@@ -1,0 +1,38 @@
+/* sidebar.module.css */
+.sidebar {
+  padding: 20px;
+  background-color: #f4f4f4;
+  position: fixed;
+  top: 80px;
+  bottom: 60px;
+  overflow-y: auto;
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar .section {
+  margin-bottom: 20px;
+}
+
+.sidebar h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar li {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.sidebar button {
+  padding: 5px 10px;
+  font-size: 0.9rem;
+  cursor: pointer;
+}

@@ -1,0 +1,28 @@
+/* layout.module.css */
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.body {
+  display: flex;
+  flex: 1;
+}
+
+.sidebar {
+  width: 20%;
+  padding: 20px;
+  background-color: #f4f4f4;
+  position: fixed;
+  top: 80px;
+  bottom: 60px;
+  overflow-y: auto;
+}
+
+.mainArea {
+  flex: 1;
+  margin-left: 20%;
+  padding: 20px;
+  overflow-y: auto;
+}

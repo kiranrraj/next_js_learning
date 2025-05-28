@@ -1,44 +1,23 @@
 from fastapi import FastAPI
-from app.db.mongo import start, stop
-from contextlib import asynccontextmanager
-from app.routes.auth.auth import router as auth_router
-from fastapi.middleware.cors import CORSMiddleware
-import logging
+from routes.user_routes import router as user_router
+from routes.patients_1_routes import router as patient_1_router
+from routes.patients_2_routes import router as patient_2_router
+from routes.patients_3_routes import router as patient_3_router
+from routes.patients_4_routes import router as patient_4_router
+from routes.pharma_test_centers_routes import router as pharma_test_centers_router
+from routes.portlets_routes import router as portlets_router
+from routes.role_permissions_routes import router as role_permissions_router
 
-# Setup logging
-logging.basicConfig(level=logging.INFO)
-logger = logging.getLogger(__name__)
+app = FastAPI()
+app.include_router(user_router)
+app.include_router(patient_1_router)
+app.include_router(patient_2_router)
+app.include_router(patient_3_router)
+app.include_router(patient_4_router)
+app.include_router(pharma_test_centers_router)
+app.include_router(portlets_router)
+app.include_router(role_permissions_router)
 
-@asynccontextmanager
-async def lifespan(app: FastAPI):
-    logger.info("Starting MongoDB connection...")
-    await start()
-    logger.info("MongoDB connection started.")
-    yield
-    logger.info("Stopping MongoDB connection...")
-    await stop()
-    logger.info("MongoDB connection stopped.")
-
-app = FastAPI(lifespan=lifespan)
-
-# Register routes
-app.include_router(auth_router)
-
-print("Routes:")
-for route in app.routes:
-    print(route.path)
-
-
-@app.get("/")
-async def home():
-    logger.info("Root endpoint accessed.")
-    return {"message": "Welcome to the health portal!"}
-
-
-app.add_middleware(
-    CORSMiddleware,
-    allow_origins=["http://localhost:3000"], 
-    allow_credentials=True,
-    allow_methods=["*"],
-    allow_headers=["*"],
-)
+if __name__ == "__main__":
+    import uvicorn
+    uvicorn.run("main:app", host="127.0.0.1", port=8000, reload=True)
