@@ -1,367 +1,532 @@
 {
-  "Hematology": {
-    "CBC": {
-      "name": "Complete Blood Count",
-      "description": "Red and white cell count, hemoglobin, hematocrit"
+  "Biochemistry": {
+    "Glucose Tests": {
+      "GlucoseFasting": {
+        "code": "GLU-F",
+        "name": "Fasting Blood Glucose",
+        "description": "Measures fasting sugar",
+        "specimen": "Blood",
+        "unit": "mg/dL",
+        "normalRange": "70 - 100",
+        "condition": "Fasting",
+        "method": "Enzymatic",
+        "turnaroundTime": "6h"
+      },
+      "GlucosePP": {
+        "code": "GLU-PP",
+        "name": "Postprandial Glucose",
+        "description": "Measures sugar after food",
+        "specimen": "Blood",
+        "unit": "mg/dL",
+        "normalRange": "70 - 140",
+        "condition": "Postprandial",
+        "method": "Enzymatic",
+        "turnaroundTime": "6h"
+      },
+      "HbA1c": {
+        "code": "A1C",
+        "name": "Glycated Hemoglobin",
+        "description": "Average glucose over 3 months",
+        "specimen": "Blood",
+        "unit": "%",
+        "normalRange": "<5.7",
+        "condition": "",
+        "method": "HPLC",
+        "turnaroundTime": "12h"
+      }
     },
-    "ESR": {
-      "name": "Erythrocyte Sedimentation Rate"
-    },
-    "PT": {
-      "name": "Prothrombin Time"
-    },
-    "APTT": {
-      "name": "Activated Partial Thromboplastin Time"
-    },
-    "BT": {
-      "name": "Bleeding Time"
-    },
-    "CT": {
-      "name": "Clotting Time"
-    },
-    "Reticulocyte": {
-      "name": "Reticulocyte Count"
-    },
-    "PeripheralSmear": {
-      "name": "Peripheral Blood Smear"
+    "Lipid Panel": {
+      "CholesterolTotal": {
+        "code": "CHOL-T",
+        "name": "Total Cholesterol",
+        "description": "Cardiac risk",
+        "specimen": "Blood",
+        "unit": "mg/dL",
+        "normalRange": "< 200",
+        "condition": "",
+        "method": "Enzymatic",
+        "turnaroundTime": "8h"
+      },
+      "Triglycerides": {
+        "code": "TRIG",
+        "name": "Triglycerides",
+        "description": "Fat levels",
+        "specimen": "Blood",
+        "unit": "mg/dL",
+        "normalRange": "< 150",
+        "condition": "Fasting",
+        "method": "Enzymatic",
+        "turnaroundTime": "8h"
+      },
+      "HDL": {
+        "code": "HDL",
+        "name": "HDL Cholesterol",
+        "description": "Good cholesterol",
+        "specimen": "Blood",
+        "unit": "mg/dL",
+        "normalRange": "> 40",
+        "condition": "",
+        "method": "Enzymatic",
+        "turnaroundTime": "8h"
+      },
+      "LDL": {
+        "code": "LDL",
+        "name": "LDL Cholesterol",
+        "description": "Bad cholesterol",
+        "specimen": "Blood",
+        "unit": "mg/dL",
+        "normalRange": "< 100",
+        "condition": "",
+        "method": "Enzymatic",
+        "turnaroundTime": "8h"
+      }
     }
   },
-  "Biochemistry": {
-    "LFT": {
-      "name": "Liver Function Test"
+  "Hematology": {
+    "Clotting Tests": {
+      "PT": {
+        "code": "PT",
+        "name": "Prothrombin Time",
+        "description": "Clotting test",
+        "specimen": "Blood",
+        "unit": "sec",
+        "normalRange": "11 - 13.5",
+        "condition": "",
+        "method": "Clot Detection",
+        "turnaroundTime": "6h"
+      },
+      "APTT": {
+        "code": "APTT",
+        "name": "Activated Partial Thromboplastin Time",
+        "description": "Clotting test",
+        "specimen": "Blood",
+        "unit": "sec",
+        "normalRange": "25 - 35",
+        "condition": "",
+        "method": "Clot Detection",
+        "turnaroundTime": "6h"
+      }
     },
-    "RFT": {
-      "name": "Renal Function Test"
-    },
-    "GlucoseFasting": {
-      "name": "Glucose - Fasting"
-    },
-    "GlucosePP": {
-      "name": "Glucose - Post Prandial"
-    },
-    "HbA1c": {
-      "name": "Hemoglobin A1c"
-    },
-    "Cholesterol": {
-      "name": "Total Cholesterol"
-    },
-    "Triglycerides": {
-      "name": "Triglycerides"
-    },
-    "HDL": {
-      "name": "High Density Lipoprotein"
-    },
-    "LDL": {
-      "name": "Low Density Lipoprotein"
-    },
-    "UricAcid": {
-      "name": "Uric Acid"
-    },
-    "Calcium": {
-      "name": "Calcium"
+    "Basic Counts": {
+      "CBC": {
+        "code": "CBC",
+        "name": "Complete Blood Count",
+        "description": "Red/white cell counts",
+        "specimen": "Blood",
+        "unit": "",
+        "normalRange": "N/A",
+        "condition": "",
+        "method": "Automated",
+        "turnaroundTime": "4h"
+      },
+      "ESR": {
+        "code": "ESR",
+        "name": "Erythrocyte Sedimentation Rate",
+        "description": "Inflammation marker",
+        "specimen": "Blood",
+        "unit": "mm/hr",
+        "normalRange": "0 - 20",
+        "condition": "",
+        "method": "Westergren",
+        "turnaroundTime": "4h"
+      }
     }
   },
   "Hormones": {
-    "TSH": {
-      "name": "Thyroid Stimulating Hormone"
-    },
-    "T3": {
-      "name": "Triiodothyronine"
-    },
-    "T4": {
-      "name": "Thyroxine"
-    },
-    "FSH": {
-      "name": "Follicle Stimulating Hormone"
-    },
-    "LH": {
-      "name": "Luteinizing Hormone"
-    },
-    "Prolactin": {
-      "name": "Prolactin"
-    },
-    "Testosterone": {
-      "name": "Testosterone"
-    },
-    "Estrogen": {
-      "name": "Estrogen"
-    },
-    "Cortisol": {
-      "name": "Cortisol"
+    "Thyroid Panel": {
+      "TSH": {
+        "code": "TSH",
+        "name": "Thyroid Stimulating Hormone",
+        "description": "Thyroid function",
+        "specimen": "Blood",
+        "unit": "\u00b5IU/mL",
+        "normalRange": "0.4 - 4.0",
+        "condition": "",
+        "method": "CLIA",
+        "turnaroundTime": "12h"
+      },
+      "T3": {
+        "code": "T3",
+        "name": "Triiodothyronine",
+        "description": "Thyroid hormone",
+        "specimen": "Blood",
+        "unit": "ng/dL",
+        "normalRange": "80 - 200",
+        "condition": "",
+        "method": "CLIA",
+        "turnaroundTime": "12h"
+      },
+      "T4": {
+        "code": "T4",
+        "name": "Thyroxine",
+        "description": "Thyroid hormone",
+        "specimen": "Blood",
+        "unit": "\u00b5g/dL",
+        "normalRange": "5.0 - 12.0",
+        "condition": "",
+        "method": "CLIA",
+        "turnaroundTime": "12h"
+      }
     }
   },
-  "Microbiology": {
-    "UrineCulture": {
-      "name": "Urine Culture"
-    },
-    "BloodCulture": {
-      "name": "Blood Culture"
-    },
-    "ThroatSwab": {
-      "name": "Throat Swab"
-    },
-    "SputumCulture": {
-      "name": "Sputum Culture"
-    },
-    "StoolCulture": {
-      "name": "Stool Culture"
-    },
-    "WidalTest": {
-      "name": "Widal Test"
-    },
-    "MantouxTest": {
-      "name": "Mantoux Test"
-    },
-    "AFBStain": {
-      "name": "Acid-Fast Bacilli Stain"
-    }
-  },
-  "Serology": {
-    "HIV": {
-      "name": "HIV 1 & 2 Antibody"
-    },
-    "HBsAg": {
-      "name": "Hepatitis B Surface Antigen"
-    },
-    "HCV": {
-      "name": "Hepatitis C Virus Antibody"
-    },
-    "VDRL": {
-      "name": "VDRL Test"
-    },
-    "RA": {
-      "name": "Rheumatoid Arthritis Factor"
-    },
-    "CRP": {
-      "name": "C-Reactive Protein"
-    },
-    "ASO": {
-      "name": "Anti Streptolysin O Titre"
-    },
-    "DengueNS1": {
-      "name": "Dengue NS1 Antigen"
-    }
-  },
-  "MasterPanel": {
-    "CBC": {
-      "$ref": "Hematology/CBC"
-    },
-    "LFT": {
-      "$ref": "Biochemistry/LFT"
-    },
-    "HbA1c": {
-      "$ref": "Biochemistry/HbA1c"
-    },
-    "TSH": {
-      "$ref": "Hormones/TSH"
-    },
-    "HIV": {
-      "$ref": "Serology/HIV"
-    },
-    "UrineCulture": {
-      "$ref": "Microbiology/UrineCulture"
+  "Urine": {
+    "General Urine Tests": {
+      "UrineRoutine": {
+        "code": "URINE-R",
+        "name": "Urine Routine",
+        "description": "General screen",
+        "specimen": "Urine",
+        "unit": "",
+        "normalRange": "N/A",
+        "condition": "",
+        "method": "Microscopy",
+        "turnaroundTime": "6h"
+      },
+      "UrineGlucose": {
+        "code": "UGLU",
+        "name": "Urine Glucose",
+        "description": "Sugar in urine",
+        "specimen": "Urine",
+        "unit": "mg/dL",
+        "normalRange": "< 15",
+        "condition": "",
+        "method": "Dipstick",
+        "turnaroundTime": "6h"
+      }
     }
   },
   "Additional Tests": {
-    "Test001": {
-      "name": "Custom Test 1",
-      "description": "This is a description for custom test 1"
-    },
-    "Test002": {
-      "name": "Custom Test 2",
-      "description": "This is a description for custom test 2"
-    },
-    "Test003": {
-      "name": "Custom Test 3",
-      "description": "This is a description for custom test 3"
-    },
-    "Test004": {
-      "name": "Custom Test 4",
-      "description": "This is a description for custom test 4"
-    },
-    "Test005": {
-      "name": "Custom Test 5",
-      "description": "This is a description for custom test 5"
-    },
-    "Test006": {
-      "name": "Custom Test 6",
-      "description": "This is a description for custom test 6"
-    },
-    "Test007": {
-      "name": "Custom Test 7",
-      "description": "This is a description for custom test 7"
-    },
-    "Test008": {
-      "name": "Custom Test 8",
-      "description": "This is a description for custom test 8"
-    },
-    "Test009": {
-      "name": "Custom Test 9",
-      "description": "This is a description for custom test 9"
-    },
-    "Test010": {
-      "name": "Custom Test 10",
-      "description": "This is a description for custom test 10"
-    },
-    "Test011": {
-      "name": "Custom Test 11",
-      "description": "This is a description for custom test 11"
-    },
-    "Test012": {
-      "name": "Custom Test 12",
-      "description": "This is a description for custom test 12"
-    },
-    "Test013": {
-      "name": "Custom Test 13",
-      "description": "This is a description for custom test 13"
-    },
-    "Test014": {
-      "name": "Custom Test 14",
-      "description": "This is a description for custom test 14"
-    },
-    "Test015": {
-      "name": "Custom Test 15",
-      "description": "This is a description for custom test 15"
-    },
-    "Test016": {
-      "name": "Custom Test 16",
-      "description": "This is a description for custom test 16"
-    },
-    "Test017": {
-      "name": "Custom Test 17",
-      "description": "This is a description for custom test 17"
-    },
-    "Test018": {
-      "name": "Custom Test 18",
-      "description": "This is a description for custom test 18"
-    },
-    "Test019": {
-      "name": "Custom Test 19",
-      "description": "This is a description for custom test 19"
-    },
-    "Test020": {
-      "name": "Custom Test 20",
-      "description": "This is a description for custom test 20"
-    },
-    "Test021": {
-      "name": "Custom Test 21",
-      "description": "This is a description for custom test 21"
-    },
-    "Test022": {
-      "name": "Custom Test 22",
-      "description": "This is a description for custom test 22"
-    },
-    "Test023": {
-      "name": "Custom Test 23",
-      "description": "This is a description for custom test 23"
-    },
-    "Test024": {
-      "name": "Custom Test 24",
-      "description": "This is a description for custom test 24"
-    },
-    "Test025": {
-      "name": "Custom Test 25",
-      "description": "This is a description for custom test 25"
-    },
-    "Test026": {
-      "name": "Custom Test 26",
-      "description": "This is a description for custom test 26"
-    },
-    "Test027": {
-      "name": "Custom Test 27",
-      "description": "This is a description for custom test 27"
-    },
-    "Test028": {
-      "name": "Custom Test 28",
-      "description": "This is a description for custom test 28"
-    },
-    "Test029": {
-      "name": "Custom Test 29",
-      "description": "This is a description for custom test 29"
-    },
-    "Test030": {
-      "name": "Custom Test 30",
-      "description": "This is a description for custom test 30"
-    },
-    "Test031": {
-      "name": "Custom Test 31",
-      "description": "This is a description for custom test 31"
-    },
-    "Test032": {
-      "name": "Custom Test 32",
-      "description": "This is a description for custom test 32"
-    },
-    "Test033": {
-      "name": "Custom Test 33",
-      "description": "This is a description for custom test 33"
-    },
-    "Test034": {
-      "name": "Custom Test 34",
-      "description": "This is a description for custom test 34"
-    },
-    "Test035": {
-      "name": "Custom Test 35",
-      "description": "This is a description for custom test 35"
-    },
-    "Test036": {
-      "name": "Custom Test 36",
-      "description": "This is a description for custom test 36"
-    },
-    "Test037": {
-      "name": "Custom Test 37",
-      "description": "This is a description for custom test 37"
-    },
-    "Test038": {
-      "name": "Custom Test 38",
-      "description": "This is a description for custom test 38"
-    },
-    "Test039": {
-      "name": "Custom Test 39",
-      "description": "This is a description for custom test 39"
-    },
-    "Test040": {
-      "name": "Custom Test 40",
-      "description": "This is a description for custom test 40"
-    },
-    "Test041": {
-      "name": "Custom Test 41",
-      "description": "This is a description for custom test 41"
-    },
-    "Test042": {
-      "name": "Custom Test 42",
-      "description": "This is a description for custom test 42"
-    },
-    "Test043": {
-      "name": "Custom Test 43",
-      "description": "This is a description for custom test 43"
-    },
-    "Test044": {
-      "name": "Custom Test 44",
-      "description": "This is a description for custom test 44"
-    },
-    "Test045": {
-      "name": "Custom Test 45",
-      "description": "This is a description for custom test 45"
-    },
-    "Test046": {
-      "name": "Custom Test 46",
-      "description": "This is a description for custom test 46"
-    },
-    "Test047": {
-      "name": "Custom Test 47",
-      "description": "This is a description for custom test 47"
-    },
-    "Test048": {
-      "name": "Custom Test 48",
-      "description": "This is a description for custom test 48"
-    },
-    "Test049": {
-      "name": "Custom Test 49",
-      "description": "This is a description for custom test 49"
-    },
-    "Test050": {
-      "name": "Custom Test 50",
-      "description": "This is a description for custom test 50"
+    "Special Panel": {
+      "Test001": {
+        "code": "TST-001",
+        "name": "Custom Test 1",
+        "description": "Description of custom test 1",
+        "specimen": "Urine",
+        "unit": "mg/dL",
+        "normalRange": "10 - 50",
+        "condition": "",
+        "method": "Standard",
+        "turnaroundTime": "24h"
+      },
+      "Test002": {
+        "code": "TST-002",
+        "name": "Custom Test 2",
+        "description": "Description of custom test 2",
+        "specimen": "Blood",
+        "unit": "mg/dL",
+        "normalRange": "10 - 50",
+        "condition": "",
+        "method": "Standard",
+        "turnaroundTime": "24h"
+      },
+      "Test003": {
+        "code": "TST-003",
+        "name": "Custom Test 3",
+        "description": "Description of custom test 3",
+        "specimen": "Urine",
+        "unit": "mg/dL",
+        "normalRange": "10 - 50",
+        "condition": "Fasting",
+        "method": "Standard",
+        "turnaroundTime": "24h"
+      },
+      "Test004": {
+        "code": "TST-004",
+        "name": "Custom Test 4",
+        "description": "Description of custom test 4",
+        "specimen": "Blood",
+        "unit": "mg/dL",
+        "normalRange": "10 - 50",
+        "condition": "",
+        "method": "Standard",
+        "turnaroundTime": "24h"
+      },
+      "Test005": {
+        "code": "TST-005",
+        "name": "Custom Test 5",
+        "description": "Description of custom test 5",
+        "specimen": "Urine",
+        "unit": "mg/dL",
+        "normalRange": "10 - 50",
+        "condition": "",
+        "method": "Standard",
+        "turnaroundTime": "24h"
+      },
+      "Test006": {
+        "code": "TST-006",
+        "name": "Custom Test 6",
+        "description": "Description of custom test 6",
+        "specimen": "Blood",
+        "unit": "mg/dL",
+        "normalRange": "10 - 50",
+        "condition": "Fasting",
+        "method": "Standard",
+        "turnaroundTime": "24h"
+      },
+      "Test007": {
+        "code": "TST-007",
+        "name": "Custom Test 7",
+        "description": "Description of custom test 7",
+        "specimen": "Urine",
+        "unit": "mg/dL",
+        "normalRange": "10 - 50",
+        "condition": "",
+        "method": "Standard",
+        "turnaroundTime": "24h"
+      },
+      "Test008": {
+        "code": "TST-008",
+        "name": "Custom Test 8",
+        "description": "Description of custom test 8",
+        "specimen": "Blood",
+        "unit": "mg/dL",
+        "normalRange": "10 - 50",
+        "condition": "",
+        "method": "Standard",
+        "turnaroundTime": "24h"
+      },
+      "Test009": {
+        "code": "TST-009",
+        "name": "Custom Test 9",
+        "description": "Description of custom test 9",
+        "specimen": "Urine",
+        "unit": "mg/dL",
+        "normalRange": "10 - 50",
+        "condition": "Fasting",
+        "method": "Standard",
+        "turnaroundTime": "24h"
+      },
+      "Test010": {
+        "code": "TST-010",
+        "name": "Custom Test 10",
+        "description": "Description of custom test 10",
+        "specimen": "Blood",
+        "unit": "mg/dL",
+        "normalRange": "10 - 50",
+        "condition": "",
+        "method": "Standard",
+        "turnaroundTime": "24h"
+      },
+      "Test011": {
+        "code": "TST-011",
+        "name": "Custom Test 11",
+        "description": "Description of custom test 11",
+        "specimen": "Urine",
+        "unit": "mg/dL",
+        "normalRange": "10 - 50",
+        "condition": "",
+        "method": "Standard",
+        "turnaroundTime": "24h"
+      },
+      "Test012": {
+        "code": "TST-012",
+        "name": "Custom Test 12",
+        "description": "Description of custom test 12",
+        "specimen": "Blood",
+        "unit": "mg/dL",
+        "normalRange": "10 - 50",
+        "condition": "Fasting",
+        "method": "Standard",
+        "turnaroundTime": "24h"
+      },
+      "Test013": {
+        "code": "TST-013",
+        "name": "Custom Test 13",
+        "description": "Description of custom test 13",
+        "specimen": "Urine",
+        "unit": "mg/dL",
+        "normalRange": "10 - 50",
+        "condition": "",
+        "method": "Standard",
+        "turnaroundTime": "24h"
+      },
+      "Test014": {
+        "code": "TST-014",
+        "name": "Custom Test 14",
+        "description": "Description of custom test 14",
+        "specimen": "Blood",
+        "unit": "mg/dL",
+        "normalRange": "10 - 50",
+        "condition": "",
+        "method": "Standard",
+        "turnaroundTime": "24h"
+      },
+      "Test015": {
+        "code": "TST-015",
+        "name": "Custom Test 15",
+        "description": "Description of custom test 15",
+        "specimen": "Urine",
+        "unit": "mg/dL",
+        "normalRange": "10 - 50",
+        "condition": "Fasting",
+        "method": "Standard",
+        "turnaroundTime": "24h"
+      },
+      "Test016": {
+        "code": "TST-016",
+        "name": "Custom Test 16",
+        "description": "Description of custom test 16",
+        "specimen": "Blood",
+        "unit": "mg/dL",
+        "normalRange": "10 - 50",
+        "condition": "",
+        "method": "Standard",
+        "turnaroundTime": "24h"
+      },
+      "Test017": {
+        "code": "TST-017",
+        "name": "Custom Test 17",
+        "description": "Description of custom test 17",
+        "specimen": "Urine",
+        "unit": "mg/dL",
+        "normalRange": "10 - 50",
+        "condition": "",
+        "method": "Standard",
+        "turnaroundTime": "24h"
+      },
+      "Test018": {
+        "code": "TST-018",
+        "name": "Custom Test 18",
+        "description": "Description of custom test 18",
+        "specimen": "Blood",
+        "unit": "mg/dL",
+        "normalRange": "10 - 50",
+        "condition": "Fasting",
+        "method": "Standard",
+        "turnaroundTime": "24h"
+      },
+      "Test019": {
+        "code": "TST-019",
+        "name": "Custom Test 19",
+        "description": "Description of custom test 19",
+        "specimen": "Urine",
+        "unit": "mg/dL",
+        "normalRange": "10 - 50",
+        "condition": "",
+        "method": "Standard",
+        "turnaroundTime": "24h"
+      },
+      "Test020": {
+        "code": "TST-020",
+        "name": "Custom Test 20",
+        "description": "Description of custom test 20",
+        "specimen": "Blood",
+        "unit": "mg/dL",
+        "normalRange": "10 - 50",
+        "condition": "",
+        "method": "Standard",
+        "turnaroundTime": "24h"
+      },
+      "Test021": {
+        "code": "TST-021",
+        "name": "Custom Test 21",
+        "description": "Description of custom test 21",
+        "specimen": "Urine",
+        "unit": "mg/dL",
+        "normalRange": "10 - 50",
+        "condition": "Fasting",
+        "method": "Standard",
+        "turnaroundTime": "24h"
+      },
+      "Test022": {
+        "code": "TST-022",
+        "name": "Custom Test 22",
+        "description": "Description of custom test 22",
+        "specimen": "Blood",
+        "unit": "mg/dL",
+        "normalRange": "10 - 50",
+        "condition": "",
+        "method": "Standard",
+        "turnaroundTime": "24h"
+      },
+      "Test023": {
+        "code": "TST-023",
+        "name": "Custom Test 23",
+        "description": "Description of custom test 23",
+        "specimen": "Urine",
+        "unit": "mg/dL",
+        "normalRange": "10 - 50",
+        "condition": "",
+        "method": "Standard",
+        "turnaroundTime": "24h"
+      },
+      "Test024": {
+        "code": "TST-024",
+        "name": "Custom Test 24",
+        "description": "Description of custom test 24",
+        "specimen": "Blood",
+        "unit": "mg/dL",
+        "normalRange": "10 - 50",
+        "condition": "Fasting",
+        "method": "Standard",
+        "turnaroundTime": "24h"
+      },
+      "Test025": {
+        "code": "TST-025",
+        "name": "Custom Test 25",
+        "description": "Description of custom test 25",
+        "specimen": "Urine",
+        "unit": "mg/dL",
+        "normalRange": "10 - 50",
+        "condition": "",
+        "method": "Standard",
+        "turnaroundTime": "24h"
+      },
+      "Test026": {
+        "code": "TST-026",
+        "name": "Custom Test 26",
+        "description": "Description of custom test 26",
+        "specimen": "Blood",
+        "unit": "mg/dL",
+        "normalRange": "10 - 50",
+        "condition": "",
+        "method": "Standard",
+        "turnaroundTime": "24h"
+      },
+      "Test027": {
+        "code": "TST-027",
+        "name": "Custom Test 27",
+        "description": "Description of custom test 27",
+        "specimen": "Urine",
+        "unit": "mg/dL",
+        "normalRange": "10 - 50",
+        "condition": "Fasting",
+        "method": "Standard",
+        "turnaroundTime": "24h"
+      },
+      "Test028": {
+        "code": "TST-028",
+        "name": "Custom Test 28",
+        "description": "Description of custom test 28",
+        "specimen": "Blood",
+        "unit": "mg/dL",
+        "normalRange": "10 - 50",
+        "condition": "",
+        "method": "Standard",
+        "turnaroundTime": "24h"
+      },
+      "Test029": {
+        "code": "TST-029",
+        "name": "Custom Test 29",
+        "description": "Description of custom test 29",
+        "specimen": "Urine",
+        "unit": "mg/dL",
+        "normalRange": "10 - 50",
+        "condition": "",
+        "method": "Standard",
+        "turnaroundTime": "24h"
+      },
+      "Test030": {
+        "code": "TST-030",
+        "name": "Custom Test 30",
+        "description": "Description of custom test 30",
+        "specimen": "Blood",
+        "unit": "mg/dL",
+        "normalRange": "10 - 50",
+        "condition": "Fasting",
+        "method": "Standard",
+        "turnaroundTime": "24h"
+      }
     }
   }
 }

@@ -38,10 +38,10 @@ const DropDownMenu = () => {
                     Settings
                 </div>
                 {isOpen && (<div className={styles.dropdownItems}>
-                    <div className={styles.dropdownItem}>Item A</div>
-                    <div className={styles.dropdownItem}>Item B</div>
-                    <div className={styles.dropdownItem}>Item C</div>
-                    <div className={styles.dropdownItem}>Item D</div>
+                    <div className={styles.dropdownItem}>Account Settings</div>
+                    <div className={styles.dropdownItem}>Toggle Theme</div>
+                    <div className={styles.dropdownDivider}></div>
+                    <div className={styles.dropdownItem}>Logout</div>
                 </div>)}
             </div>
         </div>

@@ -1,6 +1,7 @@
 .main {
-    width: 100%;
-    height: calc(100vh - 130px);
-    background-color: lightgreen;
-    display: flex;
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+  font-family: sans-serif;
+  background-color: #f0f2f5;
 }

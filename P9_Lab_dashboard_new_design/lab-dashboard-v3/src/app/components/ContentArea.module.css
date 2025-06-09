@@ -1,0 +1,24 @@
+.contentArea {
+  flex: 1;
+  padding: 24px;
+  overflow-y: auto;
+  background-color: #fff;
+  height: 100vh;
+}
+
+.contentArea h2 {
+  margin-top: 0;
+  color: #1976d2;
+}
+
+.contentArea ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.contentArea li {
+  margin: 6px 0;
+  padding: 6px;
+  border-bottom: 1px solid #eee;
+}
