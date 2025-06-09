@@ -1,3 +1,8 @@
+.sidebar-wrapper{
+    display: flex;
+    flex-direction: column;
+}
+
 .groupSection {
     border-bottom: 4px solid #fff;
     color: #fff;
