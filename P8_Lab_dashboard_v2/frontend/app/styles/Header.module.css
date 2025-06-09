@@ -3,7 +3,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 16px 32px;
-  background-color: #003366;
+  background-color: #222;
   color: white;
   position: sticky;
   top: 0;
@@ -28,4 +28,8 @@
 
 .navLink:hover {
   text-decoration: underline;
+}
+
+.link {
+  color: tomato;
 }

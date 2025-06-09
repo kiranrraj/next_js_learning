@@ -23,7 +23,6 @@ export default function AddBlogModal({ isOpen, onClose, onAdd }: AddBlogModalPro
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
 
-    // Simple validation
     if (!title.trim() || !author.trim()) {
       alert('Please fill in title and author');
       return;

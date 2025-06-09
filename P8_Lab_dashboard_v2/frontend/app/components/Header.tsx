@@ -8,7 +8,7 @@ export default function Header() {
     <header className={styles.header}>
       {/* Logo section */}
       <div className={styles.logo}>
-        <Link href="/">🧪 Lab Dashboard</Link>
+        <Link href="/" className={styles.link}>Lab Dashboard</Link>
       </div>
 
       {/* Navigation links */}
