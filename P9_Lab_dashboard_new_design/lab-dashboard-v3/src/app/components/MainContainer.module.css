@@ -1,7 +1,54 @@
-.main {
+.mainContainer {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  grid-gap: 50px;
+}
+
+.contentSection{
+  display: grid;
+}
+
+.tabBar{
   display: flex;
-  flex-direction: row;
-  height: 100vh;
-  font-family: sans-serif;
-  background-color: #f0f2f5;
+}
+
+.tabs {
+  display: flex;
+  background-color: #eee;
+  border-bottom: 1px solid #ccc;
+}
+
+.tab {
+  padding: 10px 16px;
+  cursor: pointer;
+  margin-right: 4px;
+  position: relative;
+}
+
+.activeTab {
+  border-bottom: 2px solid blue;
+}
+
+.closeButton {
+  margin-left: 8px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  font-weight: bold;
+  color: red;
+}
+
+.testDetails {
+  padding: 16px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.testCard {
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 12px;
+  width: 300px;
+  background: #f9f9f9;
 }

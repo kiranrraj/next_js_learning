@@ -1,33 +1,41 @@
 import styles from './ContentArea.module.css';
-import { LabTestEntry } from '../../types/labtestTypes';
+import { LabTestEntry } from '../../types/labTestTypes';
 
 type ContentAreaProps = {
-  selectedTest: LabTestEntry | null;
+  tests: LabTestEntry[];
 };
 
-function ContentArea({ selectedTest }: ContentAreaProps) {
+function ContentArea({ tests }: ContentAreaProps) {
+  if (!tests.length) {
+    return (
+      <div className={styles.testDisplay}>
+        <h3>Please select a test from the sidebar</h3>
+      </div>
+    );
+  }
+
   return (
-    <div className={styles.contentArea}>
-      {selectedTest ? (
-        'name' in selectedTest ? (
-          <div>
-            <h2>{selectedTest.name}</h2>
-            <ul>
-              <li><strong>Code:</strong> {selectedTest.code}</li>
-              <li><strong>Specimen:</strong> {selectedTest.specimen}</li>
-              <li><strong>Unit:</strong> {selectedTest.unit || '—'}</li>
-              <li><strong>Normal Range:</strong> {selectedTest.normalRange || '—'}</li>
-              <li><strong>Condition:</strong> {selectedTest.condition || '—'}</li>
-              <li><strong>Method:</strong> {selectedTest.method || '—'}</li>
-              <li><strong>Turnaround Time:</strong> {selectedTest.turnaroundTime || '—'}</li>
-              <li><strong>Description:</strong> {selectedTest.description || '—'}</li>
+    <div className={styles.testDisplay}>
+      {tests.map(test =>
+        'name' in test ? (
+          <div key={test.code} className={styles.testCard}>
+            <h3 className={styles.testName}>{test.name}</h3>
+            <ul className={styles.testDetails}>
+              <li><strong>Code:</strong> {test.code}</li>
+              <li><strong>Specimen:</strong> {test.specimen}</li>
+              <li><strong>Unit:</strong> {test.unit || '—'}</li>
+              <li><strong>Normal Range:</strong> {test.normalRange || '—'}</li>
+              <li><strong>Condition:</strong> {test.condition || '—'}</li>
+              <li><strong>Method:</strong> {test.method || '—'}</li>
+              <li><strong>Turnaround Time:</strong> {test.turnaroundTime || '—'}</li>
+              <li><strong>Description:</strong> {test.description || '—'}</li>
             </ul>
           </div>
         ) : (
-          <p>This is a reference to: {selectedTest.$ref}</p>
+          <div key={test.$ref} className={styles.testCard}>
+            <p>This is a reference to another test: <strong>{test.$ref}</strong></p>
+          </div>
         )
-      ) : (
-        <h3>Please select a test from the sidebar</h3>
       )}
     </div>
   );
