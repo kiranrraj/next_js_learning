@@ -1,0 +1,5 @@
+.sidebar{
+    height: calc(100vh -120px);
+    width: 20%;
+    background-color: slateblue;
+}

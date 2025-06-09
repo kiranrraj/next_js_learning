@@ -1,0 +1,28 @@
+.dropdownContainer{
+    position: relative;
+}
+
+.dropdownmenu {
+    padding: 10px;
+    position: relative;
+}
+
+.dropdownItems{
+    position: absolute;  
+    background-color: #333;
+    padding: 10px;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    top: 100%;  
+    left: 0;
+    z-index: 100;
+}
+.dropdownItem{
+    background-color: #444;
+    position: relative; 
+    padding: 8px 12px;
+    color: white;
+    cursor: pointer;
+    width: 100px;
+    margin: 2px 0;
+}

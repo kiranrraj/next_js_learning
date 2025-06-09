@@ -1,0 +1,367 @@
+{
+  "Hematology": {
+    "CBC": {
+      "name": "Complete Blood Count",
+      "description": "Red and white cell count, hemoglobin, hematocrit"
+    },
+    "ESR": {
+      "name": "Erythrocyte Sedimentation Rate"
+    },
+    "PT": {
+      "name": "Prothrombin Time"
+    },
+    "APTT": {
+      "name": "Activated Partial Thromboplastin Time"
+    },
+    "BT": {
+      "name": "Bleeding Time"
+    },
+    "CT": {
+      "name": "Clotting Time"
+    },
+    "Reticulocyte": {
+      "name": "Reticulocyte Count"
+    },
+    "PeripheralSmear": {
+      "name": "Peripheral Blood Smear"
+    }
+  },
+  "Biochemistry": {
+    "LFT": {
+      "name": "Liver Function Test"
+    },
+    "RFT": {
+      "name": "Renal Function Test"
+    },
+    "GlucoseFasting": {
+      "name": "Glucose - Fasting"
+    },
+    "GlucosePP": {
+      "name": "Glucose - Post Prandial"
+    },
+    "HbA1c": {
+      "name": "Hemoglobin A1c"
+    },
+    "Cholesterol": {
+      "name": "Total Cholesterol"
+    },
+    "Triglycerides": {
+      "name": "Triglycerides"
+    },
+    "HDL": {
+      "name": "High Density Lipoprotein"
+    },
+    "LDL": {
+      "name": "Low Density Lipoprotein"
+    },
+    "UricAcid": {
+      "name": "Uric Acid"
+    },
+    "Calcium": {
+      "name": "Calcium"
+    }
+  },
+  "Hormones": {
+    "TSH": {
+      "name": "Thyroid Stimulating Hormone"
+    },
+    "T3": {
+      "name": "Triiodothyronine"
+    },
+    "T4": {
+      "name": "Thyroxine"
+    },
+    "FSH": {
+      "name": "Follicle Stimulating Hormone"
+    },
+    "LH": {
+      "name": "Luteinizing Hormone"
+    },
+    "Prolactin": {
+      "name": "Prolactin"
+    },
+    "Testosterone": {
+      "name": "Testosterone"
+    },
+    "Estrogen": {
+      "name": "Estrogen"
+    },
+    "Cortisol": {
+      "name": "Cortisol"
+    }
+  },
+  "Microbiology": {
+    "UrineCulture": {
+      "name": "Urine Culture"
+    },
+    "BloodCulture": {
+      "name": "Blood Culture"
+    },
+    "ThroatSwab": {
+      "name": "Throat Swab"
+    },
+    "SputumCulture": {
+      "name": "Sputum Culture"
+    },
+    "StoolCulture": {
+      "name": "Stool Culture"
+    },
+    "WidalTest": {
+      "name": "Widal Test"
+    },
+    "MantouxTest": {
+      "name": "Mantoux Test"
+    },
+    "AFBStain": {
+      "name": "Acid-Fast Bacilli Stain"
+    }
+  },
+  "Serology": {
+    "HIV": {
+      "name": "HIV 1 & 2 Antibody"
+    },
+    "HBsAg": {
+      "name": "Hepatitis B Surface Antigen"
+    },
+    "HCV": {
+      "name": "Hepatitis C Virus Antibody"
+    },
+    "VDRL": {
+      "name": "VDRL Test"
+    },
+    "RA": {
+      "name": "Rheumatoid Arthritis Factor"
+    },
+    "CRP": {
+      "name": "C-Reactive Protein"
+    },
+    "ASO": {
+      "name": "Anti Streptolysin O Titre"
+    },
+    "DengueNS1": {
+      "name": "Dengue NS1 Antigen"
+    }
+  },
+  "MasterPanel": {
+    "CBC": {
+      "$ref": "Hematology/CBC"
+    },
+    "LFT": {
+      "$ref": "Biochemistry/LFT"
+    },
+    "HbA1c": {
+      "$ref": "Biochemistry/HbA1c"
+    },
+    "TSH": {
+      "$ref": "Hormones/TSH"
+    },
+    "HIV": {
+      "$ref": "Serology/HIV"
+    },
+    "UrineCulture": {
+      "$ref": "Microbiology/UrineCulture"
+    }
+  },
+  "Additional Tests": {
+    "Test001": {
+      "name": "Custom Test 1",
+      "description": "This is a description for custom test 1"
+    },
+    "Test002": {
+      "name": "Custom Test 2",
+      "description": "This is a description for custom test 2"
+    },
+    "Test003": {
+      "name": "Custom Test 3",
+      "description": "This is a description for custom test 3"
+    },
+    "Test004": {
+      "name": "Custom Test 4",
+      "description": "This is a description for custom test 4"
+    },
+    "Test005": {
+      "name": "Custom Test 5",
+      "description": "This is a description for custom test 5"
+    },
+    "Test006": {
+      "name": "Custom Test 6",
+      "description": "This is a description for custom test 6"
+    },
+    "Test007": {
+      "name": "Custom Test 7",
+      "description": "This is a description for custom test 7"
+    },
+    "Test008": {
+      "name": "Custom Test 8",
+      "description": "This is a description for custom test 8"
+    },
+    "Test009": {
+      "name": "Custom Test 9",
+      "description": "This is a description for custom test 9"
+    },
+    "Test010": {
+      "name": "Custom Test 10",
+      "description": "This is a description for custom test 10"
+    },
+    "Test011": {
+      "name": "Custom Test 11",
+      "description": "This is a description for custom test 11"
+    },
+    "Test012": {
+      "name": "Custom Test 12",
+      "description": "This is a description for custom test 12"
+    },
+    "Test013": {
+      "name": "Custom Test 13",
+      "description": "This is a description for custom test 13"
+    },
+    "Test014": {
+      "name": "Custom Test 14",
+      "description": "This is a description for custom test 14"
+    },
+    "Test015": {
+      "name": "Custom Test 15",
+      "description": "This is a description for custom test 15"
+    },
+    "Test016": {
+      "name": "Custom Test 16",
+      "description": "This is a description for custom test 16"
+    },
+    "Test017": {
+      "name": "Custom Test 17",
+      "description": "This is a description for custom test 17"
+    },
+    "Test018": {
+      "name": "Custom Test 18",
+      "description": "This is a description for custom test 18"
+    },
+    "Test019": {
+      "name": "Custom Test 19",
+      "description": "This is a description for custom test 19"
+    },
+    "Test020": {
+      "name": "Custom Test 20",
+      "description": "This is a description for custom test 20"
+    },
+    "Test021": {
+      "name": "Custom Test 21",
+      "description": "This is a description for custom test 21"
+    },
+    "Test022": {
+      "name": "Custom Test 22",
+      "description": "This is a description for custom test 22"
+    },
+    "Test023": {
+      "name": "Custom Test 23",
+      "description": "This is a description for custom test 23"
+    },
+    "Test024": {
+      "name": "Custom Test 24",
+      "description": "This is a description for custom test 24"
+    },
+    "Test025": {
+      "name": "Custom Test 25",
+      "description": "This is a description for custom test 25"
+    },
+    "Test026": {
+      "name": "Custom Test 26",
+      "description": "This is a description for custom test 26"
+    },
+    "Test027": {
+      "name": "Custom Test 27",
+      "description": "This is a description for custom test 27"
+    },
+    "Test028": {
+      "name": "Custom Test 28",
+      "description": "This is a description for custom test 28"
+    },
+    "Test029": {
+      "name": "Custom Test 29",
+      "description": "This is a description for custom test 29"
+    },
+    "Test030": {
+      "name": "Custom Test 30",
+      "description": "This is a description for custom test 30"
+    },
+    "Test031": {
+      "name": "Custom Test 31",
+      "description": "This is a description for custom test 31"
+    },
+    "Test032": {
+      "name": "Custom Test 32",
+      "description": "This is a description for custom test 32"
+    },
+    "Test033": {
+      "name": "Custom Test 33",
+      "description": "This is a description for custom test 33"
+    },
+    "Test034": {
+      "name": "Custom Test 34",
+      "description": "This is a description for custom test 34"
+    },
+    "Test035": {
+      "name": "Custom Test 35",
+      "description": "This is a description for custom test 35"
+    },
+    "Test036": {
+      "name": "Custom Test 36",
+      "description": "This is a description for custom test 36"
+    },
+    "Test037": {
+      "name": "Custom Test 37",
+      "description": "This is a description for custom test 37"
+    },
+    "Test038": {
+      "name": "Custom Test 38",
+      "description": "This is a description for custom test 38"
+    },
+    "Test039": {
+      "name": "Custom Test 39",
+      "description": "This is a description for custom test 39"
+    },
+    "Test040": {
+      "name": "Custom Test 40",
+      "description": "This is a description for custom test 40"
+    },
+    "Test041": {
+      "name": "Custom Test 41",
+      "description": "This is a description for custom test 41"
+    },
+    "Test042": {
+      "name": "Custom Test 42",
+      "description": "This is a description for custom test 42"
+    },
+    "Test043": {
+      "name": "Custom Test 43",
+      "description": "This is a description for custom test 43"
+    },
+    "Test044": {
+      "name": "Custom Test 44",
+      "description": "This is a description for custom test 44"
+    },
+    "Test045": {
+      "name": "Custom Test 45",
+      "description": "This is a description for custom test 45"
+    },
+    "Test046": {
+      "name": "Custom Test 46",
+      "description": "This is a description for custom test 46"
+    },
+    "Test047": {
+      "name": "Custom Test 47",
+      "description": "This is a description for custom test 47"
+    },
+    "Test048": {
+      "name": "Custom Test 48",
+      "description": "This is a description for custom test 48"
+    },
+    "Test049": {
+      "name": "Custom Test 49",
+      "description": "This is a description for custom test 49"
+    },
+    "Test050": {
+      "name": "Custom Test 50",
+      "description": "This is a description for custom test 50"
+    }
+  }
+}
